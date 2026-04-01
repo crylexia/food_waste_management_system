@@ -51,7 +51,7 @@
                     <tr>
                         <td>{{ $item->name }}</td>
                         <td>{{ $item->category }}</td>
-                        <td>${{ number_format($item->price, 2) }}</td>
+                        <td>₱{{ number_format($item->price, 2) }}</td>
                         <td>
                             <a href="{{ route('items.edit', $item) }}" class="btn btn-sm btn-secondary">Edit</a>
                             <form action="{{ route('items.destroy', $item) }}" method="POST" style="display: inline;" 
