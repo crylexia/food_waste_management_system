@@ -21,6 +21,7 @@ class EntryItem extends Model
         'item_id',
         'used_quantity',
         'wasted_quantity',
+        'waste_reason',
         'notes',
     ];
 
